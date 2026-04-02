@@ -1,0 +1,199 @@
+```php
+# Environment specific files
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Build artifacts
+build/
+dist/
+*.o
+*.obj
+*.out
+
+# Dependencies
+vendor/
+node_modules/
+.npm/
+.yarn/
+
+# IDE specific
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Cache directories
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Database
+*.sqlite
+*.db
+
+# Session files
+sess_*
+
+# Uploads (if any)
+uploads/
+files/
+storage/
+
+# Composer/Packagist
+composer.lock
+vendor/
+
+# PHP specific
+.php_cs
+.php_cs.dist
+.phpunit.result.cache
+
+# Web server
+.htaccess
+.web-server-pid
+
+# Browsers
+.sass-cache/
+*.css.map
+*.js.map
+
+# Backup files
+*~
+\#*\#
+*.bak
+*.backup
+*.orig
+*.rej
+*.swp
+*.swo
+
+# Compiled templates
+*.cache
+*.compiled
+
+# Lock files
+*.lock
+package-lock.json
+composer.lock
+
+# Environment variables
+.env.*
+!.env.example
+
+# Test files
+.phpunit.xml
+.phpunit.xml.dist
+phpunit.xml
+phpunit.xml.dist
+
+# Configuration backups
+config/*.bak
+config/*.backup
+
+# Session storage
+sessions/
+tmp/sessions/
+
+# Cache
+cache/
+tmp/cache/
+
+# Logs (additional)
+logs/
+tmp/logs/
+
+# Storage
+storage/
+tmp/storage/
+
+# Assets (if auto-generated)
+assets/compiled/
+assets/dist/
+
+# Deployment
+deploy/
+deployment/
+
+# IDE
+nbproject/
+.settings/
+
+# Vim
+*.un~
+Session.vim
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# CodeKit
+.config/codekit-next.json
+.config/codekit.json
+.codekit-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# PhpStorm
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+
+# Vim swap files
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# OS X
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Icon?
+```
+
+Wait, let me reconsider. Looking at the file changes, I see only PHP source files and JavaScript files - no build artifacts, no dependency directories, no temporary files that need to be ignored. The changes are all source code files (.php, .js).
+
+Output: (empty)

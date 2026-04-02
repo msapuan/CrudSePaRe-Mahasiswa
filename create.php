@@ -2,7 +2,7 @@
 
 <!-- form input data mahasiswa -->
 <div class="row">
-    <div class="col-md-4 col-md-4-offset">
+    <div class="col-md-4 col-md-offset-4">
         <form method='post' action='create-action.php'>
             <div class="form-group">
                 <label>NIM</label>
@@ -18,7 +18,7 @@
             </div>
             <div class="form-group">
                 <label>Jurusan</label>
-                <select name="jurusan" class="form-control" name="jurusan">
+                <select name="jurusan" class="form-control">
                     <option value="">-- Pilih Jurusan --</option>
                     <option value="S1 - Teknik Informatika">S1 - Teknik Informatika</option>
                     <option value="D3 - Manajemen Informatika">D3 - Manajemen Informatika</option>

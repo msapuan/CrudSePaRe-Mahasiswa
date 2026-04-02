@@ -1,13 +1,16 @@
 <?php
-    $keyword = $_POST['keyword']; // Ambil data keyword yang dikirim dengan AJAX
+/**
+ * Search Handler (AJAX)
+ * Returns search results as JSON
+ */
 
-    // Load view.php
-    ob_start();
-    include "view.php";
-    $html = ob_get_contents(); // Masukan isi dari view.php ke dalam variabel $html
-    ob_end_clean();
+header('Content-Type: application/json');
 
-    // Buat array dengan index hasil dan value nya $html
-    // Lalu konversi menjadi JSON
-    echo json_encode(array('hasil'=>$html));
+// Capture the output from view.php
+ob_start();
+include __DIR__ . '/view.php';
+$html = ob_get_contents();
+ob_end_clean();
+
+echo json_encode(['hasil' => $html]);
 ?>
