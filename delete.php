@@ -1,11 +1,20 @@
 <?php
-	include 'conn.php';
+/**
+ * Delete Student Action Handler
+ */
 
-	$id_mhs = $_GET['id_mhs'];
+require_once __DIR__ . '/models/Student.php';
 
-	mysqli_query($conn, 
-			"DELETE FROM tbl_mahasiswa 
-				WHERE id_mhs='$id_mhs'");
-
-	header("location: index.php");
+if (isset($_GET['id_mhs'])) {
+    $id_mhs = (int)$_GET['id_mhs'];
+    
+    $student = new Student();
+    
+    if ($student->delete($id_mhs)) {
+        header("Location: index.php?page=tampil");
+        exit;
+    } else {
+        die('Failed to delete student record.');
+    }
+}
 ?>
